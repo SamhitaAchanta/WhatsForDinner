@@ -1,16 +1,3 @@
-/* 
-{
---eggplant: #754668ff;
---dim-gray: #67626dff;
---hookers-green: #587d71ff;
---sea-green: #539464ff;
---pigment-green: #4daa57ff;
---mantis: #81c47eff;
---celadon: #b5dda4ff;
---tea-green: #d7e5b8ff;
---papaya-whip: #f9ecccff;
-} */
-
 *{
     padding: 0;
     margin: 0;
@@ -19,7 +6,8 @@
 body{
     height: 100vh;
     width: 100%;
-    background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.52%, #133917 75.52%)
+    background: #f9eccc;
+    /* background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.52%, #133917 75.52%); */
 }
 
 a{
@@ -27,7 +15,7 @@ a{
 }
 
 .logo a{
-    color: white;
+    color: #754668;
     font-size: 20px;
     letter-spacing: 3px;
     font-weight: 600;
@@ -52,7 +40,7 @@ a{
 }
 
 .links ul li a {
-    color: white;
+    color: #754668;
 
 }
 
@@ -62,12 +50,12 @@ a{
 }
 
 .btn a{
-    background: #fc4626;
-    padding: 15px 30px;
-    color: #212224;
+    background: #754668;
+    padding: 15px 15px;
+    color: white;
     text-transform: uppercase;
     font-size: 15px;
-    border-radius:30px;
+    border-radius:10px;
     letter-spacing: 1px;
 }
 
@@ -87,15 +75,15 @@ section{
 }
 
 .food-text h1{
-    font-family: 'Permanent Marker', cursive; /*change font*/
+    font-family: 'Comfortaa', cursive; /*change font*/
     font-size: 40px;
     line-height: 1;
-    color: white;
+    color: #754668;
     margin: 0 0 20px;
 }
 
 .food-text p{
-    color: white;
+    color: #754668;
     font-size:15px;
     line-height: 1.9;
     margin-bottom: 20px;
@@ -125,18 +113,3 @@ section{
     transform: translateX(8px);
 }
 
-.title-typewriter:before{
-    content: "";
-    animation: animate 4s steps(12);
-}
-
-
-@keyframes animate {
-    40%,60%{
-        left: calc(100% + 4px);
-    }
-    100%{
-        left:0%;
-    }
-    
-}
