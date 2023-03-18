@@ -1,21 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Main</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    
+    <link rel="icon" type="image/png" href="favicon.png" />
 </head>
+
 <body>
     
-    <!--Title -->
-    <h2>What's for dinner?</h2>
+    
+    <!--Header -->
+    <header>
+        <!--Navbar TO-DO-->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"> What's for <span class="title-typewriter"></span> </a>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="calendar.html">Calendar</a></li>
+                    <li><a href="#">Sign In</a></li>
+                </ul>
+            </div>
 
-    <!--Navbar TO-DO-->
+            <div class="btn">
+                <a href="#">Find More</a>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="food">
+        <!--Main -->
+       <div class="food-text">
+           <h1>Not sure what to eat tonight?</h1>
+           <p>If you're having trouble thinking about what to make with the ingredients you have in the fridge, here's how to
+       get started. Enter the ingredients you have in your fridge or pantry and we can display recipes with those exact ingredients.</p>
+           <a href="#"> <h3>Insert your ingredients</h3> </a>
+       </div>
+       
+       <div class="fridge-img">
+        <img src="fridge.png">
+       </div>
+        
+    </section>
+    
 
-    <!--Main -->
-    <h1>Not sure what to eat tonight?</h1>
-    <p>If you're having trouble thinking about what to make with the ingredients you have in the fridge, here's how to get started.</p>    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
 
+
+    <!-- <script>
+
+        const text = document.querySelector(".title-typewriter");
+        const typeWriter = () => {
+            setTimeout(() => {
+                text.textContent = "breakfast?";
+            }, 0);
+
+            setTimeout(() => {
+                text.textContent = "lunch?";
+            }, 4000);
+
+            setTimeout(() => {
+                text.textContent = "dinner?";
+            }, 8000);
+
+        }
+
+        typeWriter();
+        // setInterval(typeWriter, 10000);
+        
+        </script> -->
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".title-typewriter",{
+            strings: ["breakfast?","lunch?","dinner?"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            showCursor: false
+        })
+    </script>
+    
+
+   
 </body>
+
 </html>
