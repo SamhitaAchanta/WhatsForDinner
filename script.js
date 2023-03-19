@@ -8,7 +8,7 @@ const sr = ScrollReveal ({
 ScrollReveal().reveal('.food-text',{delay:200,origin:'top'});
 ScrollReveal().reveal('.fridge-img',{delay:450,origin:'top'});
 
-
+var 
 
 
 // const text = document.querySelector(".title-typewriter");
