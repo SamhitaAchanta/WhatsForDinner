@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <title>Insert Items</title>
     <link rel="stylesheet" href="insert_ingredients.css">
+    <script src="script.js"></script>
  </head>
  <body>
 
     <div class="container">
-        <div id="options">
-            <input type="text" name="options[]" class="options" size="50" placeholder="Ingredient">
-            <input type="text" name="options[]" class="options" size="50" placeholder="Ingredient">
-            <input type="text" name="options[]" class="options" size="50" placeholder="Ingredient">
-        </div>
+
+        <form action="" method="post">
+            <div id="options">
+                <input type="text" name="text" class="text" size="50" placeholder="Ingredient">
+                <input type="text" name="text" class="text" size="50" placeholder="Ingredient">
+                <input type="text" name="text" class="text" size="50" placeholder="Ingredient">
+            </div>
+        </form>
 
         <div class="controls">
-            <a href="#" id="add_options"><i class="fa fa-plus"></i>Add</a>
-            <a href="#" id="remove_options"><i class="fa fa-minus"></i>Remove</a>
+            <button id="add_options" onclick="add_options()">Add</button> 
+            <button id="remove_options" onclick="remove_options()">Remove</button> 
         </div>
     </div>
-    <script src="script.js"></script>
+    
  </body>
  </html>
