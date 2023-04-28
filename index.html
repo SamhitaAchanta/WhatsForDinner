@@ -1,0 +1,77 @@
+<!--
+    Name: Samhita Achanta
+    File Name: Index.html
+    Assignment: Project 1
+    This is the main HTML landing page of the project.  
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="icon" type="image/png" href="favicon.png" />
+</head>
+
+<body>
+    
+    <!--Header -->
+    <header>
+        <!--Navbar -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"> What's for <span class="title-typewriter"></span> </a>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="calendar.html">Calendar</a></li>
+                    <li><a href="#">Sign In</a></li>
+                </ul>
+            </div>
+
+            <div class="btn">
+                <a href="#">Find More</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <section class="food">
+       <div class="food-text">
+           <h1>Not sure what to eat tonight?</h1>
+           <p>If you're having trouble thinking about what to make with the ingredients you have in the fridge, here's how to
+       get started. Enter the ingredients you have in your fridge or pantry and we can display recipes with those exact ingredients.</p>
+           <a href="insert_ingredients.html"> <h3>Insert your ingredients</h3> </a>
+           <a href="recipe.html"> <h3>Check out the recipes</h3></a>
+       </div>
+       
+       <div class="fridge-img">
+        <img src="fridge.png">
+       </div>
+        
+    </section>
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+
+    <!--Footer TO DO-->
+
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".title-typewriter",{
+            strings: ["breakfast?","lunch?","dinner?"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            showCursor: false
+        })
+    </script>
+    
+
+   
+</body>
+
+</html>
