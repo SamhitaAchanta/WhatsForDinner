@@ -6,3 +6,4 @@ Instructions:
 port #: 3000
 
 localhost:3000/ingredients
+The starting page is index.html
