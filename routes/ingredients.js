@@ -82,7 +82,7 @@ router.post('/add', function(req, res, next) {
 })
 
 // display edit ingredients page
-router.get('/edit/(:id)', function(req, res, next) {
+router.get('/edit/', function(req, res, next) {
 
     let recipeID = req.params.recipeID;
    
@@ -110,7 +110,7 @@ router.get('/edit/(:id)', function(req, res, next) {
 })
 
 // update ingredients data
-router.post('/update/:id', function(req, res, next) {
+router.post('/update/', function(req, res, next) {
 
     let id = req.params.id;
     let recipeName = req.body.recipeName;
@@ -166,7 +166,7 @@ router.post('/update/:id', function(req, res, next) {
 })
    
 // delete recipe
-router.get('/delete/(:id)', function(req, res, next) {
+router.get('/delete/', function(req, res, next) {
 
     let id = req.params.id;
      
